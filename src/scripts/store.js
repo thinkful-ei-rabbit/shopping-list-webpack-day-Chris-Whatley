@@ -1,4 +1,4 @@
-import item from './item.js';
+import item from './item';
 
 const items = [];
 let hideCheckeditems = false;
@@ -6,7 +6,7 @@ let hideCheckeditems = false;
 const findById = function (id) {
   return this.items.find(currentItem => currentItem.id === id);
 };
-
+ 
 const addItem = function (name) {
   try {
     item.validateName(name);
